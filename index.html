@@ -1,0 +1,30 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaga Espacial - Juego de Naves</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="canvasContainer">
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+        </div>
+        <div id="ui">
+            <div id="score">Puntuación: 0</div>
+            <div id="lives">Vidas: 3</div>
+            <div id="powerups">Power-up: Ninguno</div>
+        </div>
+        <div id="gameOver" style="display: none;">
+            <h2>¡Game Over!</h2>
+            <p>Puntuación Final: <span id="finalScore">0</span></p>
+            <button onclick="location.reload()">Jugar de Nuevo</button>
+        </div>
+        <div id="pauseMenu" style="display: none;">
+            <h2>Juego Pausado</h2>
+            <p>Presiona P para continuar</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(ellipse at center, #0a0a2e 0%, #000000 100%);
+    font-family: 'Courier New', monospace;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#gameContainer {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 20px #00ffff, inset 0 0 20px rgba(0, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#gameCanvas {
+    background: linear-gradient(to bottom, #000428 0%, #004e92 100%);
+    display: block;
+}
+
+#ui {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #00ffff;
+    font-size: 18px;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+#ui div {
+    margin-bottom: 5px;
+}
+
+#gameOver, #pauseMenu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: #00ffff;
+    padding: 40px;
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+}
+
+button {
+    background: transparent;
+    color: #00ffff;
+    border: 2px solid #00ffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #00ffff;
+    color: #000;
+    box-shadow: 0 0 20px #00ffff;
+}
+
+#canvasContainer {
+    position: relative;
+}
